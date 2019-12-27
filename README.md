@@ -26,8 +26,14 @@ package name 都要小寫
 ```java
 public class HelloYou {
   public static void main(String[] args) {
-    String someName="Ian";
-    System.out.println("Hello "+someName+"!");
+    String name="Ian";
+    int age=24;
+    double desiredSalary=1000000;
+    char gender='m';
+    char c='!';
+    boolean lookingForJob=false;
+    
+    System.out.println("Hello "+name+c);
     
     //Sun Microsystems announced the release of Java in 1995
     //註解
