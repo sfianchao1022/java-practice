@@ -22,7 +22,7 @@ package name 都要小寫
 !!!
 
 ### 宣告
-- printf,string
+- int,double,char,String,boolean,printf
 ```java
 public class HelloYou {
   public static void main(String[] args) {
