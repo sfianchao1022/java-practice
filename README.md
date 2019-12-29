@@ -34,6 +34,8 @@ public class HelloYou {
     boolean lookingForJob=false;
     
     System.out.println("Hello "+name+c);
+    System.out.println("my lucky number is"+(3+4));//7
+    
     
     //Sun Microsystems announced the release of Java in 1995
     //註解
@@ -45,3 +47,17 @@ public class HelloYou {
   }
 }
 ```
+
+- .equals()
+```java
+String person1 = "Paul";
+String person2 = "John";
+String person3 = "Paul";
+
+System.out.println(person1.equals(person2));
+//prints false, since "Paul" is not "John"
+
+System.out.println(person1.equals(person3));
+//prints true, since "Paul" is "Paul"
+```
+
