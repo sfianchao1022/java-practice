@@ -62,6 +62,57 @@ System.out.println(person1.equals(person2));
 System.out.println(person1.equals(person3));
 //prints true, since "Paul" is "Paul"
 ```
+
+- ArrayList
+```java
+ArrayList<String> names = new ArrayList<String>();
+
+names.add("Emily");//[0]
+names.add("Bob");//[1]
+names.add("Cindy");//[2]
+names.set(2, "Carolyn");
+//replace index 2 with element 
+names.add(1, "Ann");
+// add element at index 1, others moved backward
+names.remove(1);
+//remove element from index 1, others moved forward
+```
+
+- for-each loop
+```java
+//Traverses all elements of a collection:
+double[] values = ...;
+double sum = 0;
+for (double element : values)
+{
+  sum = sum + element;
+}
+//Read the loop as “for each element in values”
+//Traditional alternative:
+double[] values = ...;
+double sum = 0;
+for (int i = 0; i < values.length; i++)
+{
+  double element = values[i];
+  sum = sum + element;
+}
+```
+```java
+//Works for ArrayListstoo:
+ArrayList<BankAccount> accounts = ...;
+double sum = 0;
+for (BankAccount account : accounts)
+{
+  sum = sum + aaccount.getBalance();
+}
+//Equivalent to the following ordinary forloop:
+double sum = 0;
+for (int i = 0; i < accounts.size(); i++)
+{
+  BankAccount account = accounts.get(i);
+  sum = sum + account.getBalance();
+}
+```
 ---
 
 ## eclipse library import
