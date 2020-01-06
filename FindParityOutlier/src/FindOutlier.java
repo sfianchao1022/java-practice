@@ -1,6 +1,7 @@
 public class FindOutlier{
+	
   static int find(int[] integers){
-  
+	  
     int e=0;
     int o=0;
     int ans=0;
@@ -33,7 +34,8 @@ public class FindOutlier{
       }
     }
     
-   
+    //return only odd or even number
     return ans;
   }
+  
 }
