@@ -15,6 +15,8 @@ A successful compilation produces a .class file: **Plankton.class**, that we exe
 java Plankton
 ```
 
+---
+
 ## java 命名規則
 
 !!! note
@@ -60,4 +62,12 @@ System.out.println(person1.equals(person2));
 System.out.println(person1.equals(person3));
 //prints true, since "Paul" is "Paul"
 ```
+---
+
+## eclipse library import
+- [昭佑.天翔: Eclipse 中載入 User Library 或 Java Component 元件](https://tomkuo139.blogspot.com/2010/08/eclipse-user-library-java-component.html)
+
+### Junit
+- [Assert (JUnit API)](http://junit.sourceforge.net/junit3.8.1/javadoc/junit/framework/Assert.html)
+  - assertEquals()
 
