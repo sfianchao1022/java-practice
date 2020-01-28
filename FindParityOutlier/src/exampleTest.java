@@ -3,7 +3,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import org.junit.runners.JUnit4;
 
-public class exampleTest {
+public class ExampleTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

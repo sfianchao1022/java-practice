@@ -1,7 +1,5 @@
 package two_sum;
 
-import java.util.Arrays;
-
 public class ExampleTest {
 
 	public static void main(String[] args) {
