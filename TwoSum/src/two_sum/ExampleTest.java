@@ -6,9 +6,9 @@ public class ExampleTest {
 		// TODO Auto-generated method stub
 		
 		//java的array視為物件 要new
-		int[] num=new int[]{5,6,34,76};
-		int target1=81;
-		int target2=40;
+		int[] num=new int[]{5,9,37,76};
+		int target1=46;
+		int target2=113;
 		
 		Solution S1 = new Solution(num,target1);
         Solution S2 = new Solution(num,target2);
