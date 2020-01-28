@@ -4,6 +4,7 @@
 - [Java JDK 下載、安裝與環境變數設定教學-Windows 篇 \| KJie Notes](https://www.kjnotes.com/devtools/35)- 
 - [Eclipse 下載安裝與使用教學 for Java \| MIS 腳印](https://footmark.info/software/ide/eclipse-download-and-use-for-java/)
 - [Eclipse IDE 下載、設定與使用教學-Java 篇 \| KJie Notes](https://www.kjnotes.com/devtools/80)
+- [Eclipse更換目前專案的JDK/JRE @ 松鼠的樹洞2.0](http://dontpkme.blogspot.com/2013/10/eclipsejre.html)
 
 ## compile java
 For example, with a file called Plankton.java, we could compile it with the terminal command:
@@ -98,7 +99,7 @@ for (int i = 0; i < values.length; i++)
 }
 ```
 ```java
-//Works for ArrayListstoo:
+//Works for ArrayLists too:
 ArrayList<BankAccount> accounts = ...;
 double sum = 0;
 for (BankAccount account : accounts)
@@ -115,6 +116,9 @@ for (int i = 0; i < accounts.size(); i++)
 ```
 
 ***
+
+## java no pointer => reference variable
+- [C/C++ Pointers vs Java References - GeeksforGeeks](https://www.geeksforgeeks.org/is-there-any-concept-of-pointers-in-java/)
 
 ## eclipse library import
 - [昭佑.天翔: Eclipse 中載入 User Library 或 Java Component 元件](https://tomkuo139.blogspot.com/2010/08/eclipse-user-library-java-component.html)
