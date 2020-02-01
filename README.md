@@ -51,6 +51,7 @@ public class HelloYou {
 }
 ```
 
+
 - .equals()
 ```java
 String person1 = "Paul";
@@ -115,10 +116,14 @@ for (int i = 0; i < accounts.size(); i++)
 }
 ```
 
-***
+---
 
 ## java no pointer => reference variable
 - [C/C++ Pointers vs Java References - GeeksforGeeks](https://www.geeksforgeeks.org/is-there-any-concept-of-pointers-in-java/)
+
+!!! hint
+java 只有 call-by-value
+!!!
 
 ## eclipse library import
 - [昭佑.天翔: Eclipse 中載入 User Library 或 Java Component 元件](https://tomkuo139.blogspot.com/2010/08/eclipse-user-library-java-component.html)
@@ -126,4 +131,3 @@ for (int i = 0; i < accounts.size(); i++)
 ### Junit
 - [Assert (JUnit API)](http://junit.sourceforge.net/junit3.8.1/javadoc/junit/framework/Assert.html)
   - assertEquals()
-
