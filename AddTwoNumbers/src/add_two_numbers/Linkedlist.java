@@ -5,8 +5,12 @@ public class Linkedlist {
 	public Node front;
 	public Node rear;
 	
+	public Node count;
+	
+	public int nodeNum;
+	
 	public Linkedlist() {
-		//queue in linked list
+		
 	}
 	
 	public void create() {
@@ -26,7 +30,9 @@ public class Linkedlist {
 		}
 		
 		System.out.println(rear.val);
-
+		
+		System.out.println("node number : "+ ++nodeNum);
+		
 	}
 	
 	public void printLinkedlist() {
@@ -35,15 +41,35 @@ public class Linkedlist {
 		
 		if(rear!=null) {
 			//從front開始scan 依序print value
-			while(front!=null) {
-				
-				System.out.print(front.val+" ");//System.out.print 輸出不換行
-				front=front.listNode;
+			count=front;
+			while(count!=null) {
+				System.out.print(count.val+" ");//System.out.print 輸出不換行
+				count=count.listNode;
 			}
 			
 		}else {
 			System.out.println("front==rear");
 		}
+		
+		System.out.println(" ");
+		
+	}
+	
+	public Linkedlist reverse(Linkedlist l) {
+		Linkedlist rlist=new Linkedlist();
+		
+		return rlist;
+	}
+	
+	public void getFrontValue() {
+		
+		System.out.println("front value : "+front.val+" ");
+		
+	}
+	
+	public void getRearValue() {
+		
+		System.out.println("rear value : "+rear.val+" ");
 		
 	}
 	
