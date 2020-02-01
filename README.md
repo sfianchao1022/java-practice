@@ -122,7 +122,8 @@ for (int i = 0; i < accounts.size(); i++)
 - [C/C++ Pointers vs Java References - GeeksforGeeks](https://www.geeksforgeeks.org/is-there-any-concept-of-pointers-in-java/)
 
 !!! hint
-java 只有 call-by-value
+java 只有 call-by-value 
+=> actual parameter(呼叫時) & formal parameter(函式) 可以相同
 !!!
 
 ## eclipse library import
