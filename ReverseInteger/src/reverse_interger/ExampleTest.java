@@ -18,6 +18,7 @@ public class ExampleTest {
 		System.out.println(pow(2,5));
 	}
 	
+	//Math.pow(double,double)
 	public static int pow(int a,int b) {
 		int sum=1;
 		for(int i=0;i<b;i++) {
