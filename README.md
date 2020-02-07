@@ -65,6 +65,12 @@ System.out.println(person1.equals(person3));
 //prints true, since "Paul" is "Paul"
 ```
 
+- Math.pow()
+```
+//a^b
+Math.pow(double a,double b)
+```
+
 - ArrayList
 ```java
 ArrayList<String> names = new ArrayList<String>();
@@ -113,6 +119,20 @@ for (int i = 0; i < accounts.size(); i++)
 {
   BankAccount account = accounts.get(i);
   sum = sum + account.getBalance();
+}
+```
+
+- 例外處理 try...cathch...finally
+（Exception）在 Java 中代表一個錯誤的實體物件
+```java
+try {
+    // 陳述句
+}
+catch(例外型態 名稱) {
+    // 例外處理
+}
+finally {
+    // 一定會處理的區塊
 }
 ```
 
