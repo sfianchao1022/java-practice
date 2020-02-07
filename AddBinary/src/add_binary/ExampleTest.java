@@ -6,7 +6,7 @@ public class ExampleTest {
 		// TODO Auto-generated method stub
 		
 		String result=addBinary("1010110101"
-				,"1100001");
+				,"1100010111");
 		System.out.println(result);
 		
 	}
@@ -24,10 +24,10 @@ public class ExampleTest {
 			//valueOf(String) returns a new Integer() object whereas parseInt(String) returns a primitive int
 			//int t1 = Integer.parseInt(Integer.valueOf("123"));//error
 			//int t2 = Integer.valueOf(Integer.parseInt("123"));
-		
 			int x=Integer.valueOf(a);
 			int y=Integer.parseInt(b);			
 			
+			//string存進int[]
 			while(x>=0) {
 				
 				if(count>a.length()-1) {
@@ -59,7 +59,7 @@ public class ExampleTest {
 			//System.out.println(Integer.toString(arrSum[2])+" "+Integer.toString(arrSum[1])+" "+Integer.toString(arrSum[0]));
 			
 			for(int i=0;i<arrSum.length;i++) {
-
+				//有進位
 				if(arrSum[i]+carry>1) {
 					
 					arrSum[i]=(arrSum[i]+carry)%2;
@@ -67,7 +67,7 @@ public class ExampleTest {
 					System.out.println("c : "+carry);
 					//ans+=Integer.toString(arrSum[i]);
 					carry=1;
-					
+				//沒進位	
 				}else {
 					
 					arrSum[i]=(arrSum[i]+carry)%2;
@@ -80,12 +80,14 @@ public class ExampleTest {
 
 			}
 			
+			//反向轉成String
 			for(int i=0;i<arrSum.length;i++) {
 				ans+=Integer.toString(arrSum[arrSum.length-1-i]);
 				//System.out.println(Integer.toString(arrSum[arrSum.length-1-i]));
 				//System.out.println(ans);
 			}
-		
+			
+			//若String是第一個數字 轉成數字再存進String(去掉第一個0)
  			System.out.println(ans.charAt(0));
 			if(ans.charAt(0)=='0') {
 				ans=Integer.toString(Integer.parseInt(ans));
