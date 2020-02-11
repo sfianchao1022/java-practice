@@ -18,6 +18,25 @@ java Plankton
 
 ***
 
+### main method String[] args get input from terminal
+```java
+public class HelloYou {
+  public static void main(String[] args) {
+    System.out.println("Hello " + args[0]);  
+  }
+}
+```
+When we run the file HelloYou in the terminal with an argument of "Laura":
+```
+java HelloYou Laura
+```
+We get the output:
+```
+Hello Laura 
+```
+
+***
+
 ## java 命名規則
 
 !!! note
@@ -28,6 +47,8 @@ package name 都要小寫
 - int,double,char,String,boolean,printf
 ```java
 public class HelloYou {
+  //The args parameter is another example of a String array.
+  //In main method, the array args contains the arguments that we pass in from the terminal  when we run the class file. 
   public static void main(String[] args) {
     String name="Ian";
     int age=24;
@@ -66,9 +87,27 @@ System.out.println(person1.equals(person3));
 ```
 
 - Math.pow()
-```
+```java
 //a^b
 Math.pow(double a,double b)
+```
+
+- switch
+```java
+double shippingCost;
+	 	// declare switch statement here
+    switch (shipping) {
+      case "Regular": 
+        shippingCost=0;
+        break;//要加break
+      case "Express":
+        shippingCost=1.75;
+        break;
+      default:
+        shippingCost=.5;
+    }
+    
+    return shippingCost;
 ```
 
 - ArrayList
@@ -136,7 +175,29 @@ finally {
 }
 ```
 
----
+
+
+***
+
+
+
+## object method
+- String 
+  - [Java String類 - Java基礎教程](http://tw.gitbook.net/java/java_strings.html)
+
+
+
+***
+
+
+## JSON
+### import json
+- [JSON & Java - Json基礎教程](http://tw.gitbook.net/json/json_java_example.html)
+- IntelliJ IDEA : file -> project structure 加入.jar file
+
+
+***
+
 
 ## java no pointer => reference variable
 - [C/C++ Pointers vs Java References - GeeksforGeeks](https://www.geeksforgeeks.org/is-there-any-concept-of-pointers-in-java/)
