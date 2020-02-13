@@ -72,6 +72,13 @@ public class HelloYou {
 }
 ```
 
+- .substrintg(int startIndex,int endIndex)
+```java
+//
+String str="abcdefg";
+System.out.println(str.substring(2));//print cdefg
+
+```
 
 - .equals()
 ```java
@@ -85,6 +92,7 @@ System.out.println(person1.equals(person2));
 System.out.println(person1.equals(person3));
 //prints true, since "Paul" is "Paul"
 ```
+
 
 - Math.pow()
 ```java
@@ -110,6 +118,7 @@ double shippingCost;
     return shippingCost;
 ```
 
+
 - ArrayList
 ```java
 ArrayList<String> names = new ArrayList<String>();
@@ -117,6 +126,7 @@ ArrayList<String> names = new ArrayList<String>();
 names.add("Emily");//[0]
 names.add("Bob");//[1]
 names.add("Cindy");//[2]
+names.size();//size 3
 names.set(2, "Carolyn");
 //replace index 2 with element 
 names.add(1, "Ann");
@@ -124,6 +134,7 @@ names.add(1, "Ann");
 names.remove(1);
 //remove element from index 1, others moved forward
 ```
+
 
 - for-each loop
 ```java
@@ -150,7 +161,7 @@ ArrayList<BankAccount> accounts = ...;
 double sum = 0;
 for (BankAccount account : accounts)
 {
-  sum = sum + aaccount.getBalance();
+  sum = sum + account.getBalance();
 }
 //Equivalent to the following ordinary forloop:
 double sum = 0;
@@ -159,6 +170,19 @@ for (int i = 0; i < accounts.size(); i++)
   BankAccount account = accounts.get(i);
   sum = sum + account.getBalance();
 }
+```
+
+- Random
+```java
+        Random random=new Random();
+        int num=random.nextInt(6)+1;//6個數字(0~5)+1
+
+        while(num!=5){
+            System.out.println(num);
+            Random newRandom=new Random();
+            random=newRandom;
+            num=random.nextInt(6)+1;
+        }
 ```
 
 - 例外處理 try...cathch...finally
@@ -190,14 +214,27 @@ finally {
 ***
 
 
-## JSON
-### import json
-- [JSON & Java - Json基礎教程](http://tw.gitbook.net/json/json_java_example.html)
-- IntelliJ IDEA : file -> project structure 加入.jar file
+## java file 相對路徑讀取
+- [Java相对路径读取文件_java-路径问题_beloveddarling的博客-CSDN博客](https://blog.csdn.net/beloveddarling/article/details/53694103)
 
+```java
+//demo.json and Main.class在同一個資料夾(src/com/company)相對路徑
+        //File file = new File("src/com/company/demo.json");
+
+        String path = Main.class.getResource("demo.json").getPath();
+        File file = new File(path);
+
+        try{
+            if(file.exists()){
+                System.out.println("works!");
+            }
+
+        }catch(Exception e){
+            e.getMessage();
+        }
+```
 
 ***
-
 
 ## java no pointer => reference variable
 - [C/C++ Pointers vs Java References - GeeksforGeeks](https://www.geeksforgeeks.org/is-there-any-concept-of-pointers-in-java/)
@@ -207,9 +244,3 @@ java 只有 call-by-value
 => actual parameter(呼叫時) & formal parameter(函式) 可以相同
 !!!
 
-## eclipse library import
-- [昭佑.天翔: Eclipse 中載入 User Library 或 Java Component 元件](https://tomkuo139.blogspot.com/2010/08/eclipse-user-library-java-component.html)
-
-### Junit
-- [Assert (JUnit API)](http://junit.sourceforge.net/junit3.8.1/javadoc/junit/framework/Assert.html)
-  - assertEquals()
