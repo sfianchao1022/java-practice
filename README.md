@@ -261,6 +261,7 @@ public void cook(){
 
         }catch(Exception e){
             e.getMessage();
+            System.err.println("Exception: " + e.getMessage());
         }
 ```
 
