@@ -57,7 +57,8 @@ public class HelloYou {
     char c='!';
     boolean lookingForJob=false;
     
-    System.out.println("Hello "+name+c);
+    //shortcut : ctrl + j
+    System.out.println("Hello "+name+c);//shortcut in intelliJ IDEA : sout 
     System.out.println("my lucky number is"+(3+4));//7
     
     
@@ -203,6 +204,35 @@ finally {
 
 ***
 
+
+## INHERITANCE AND POLYMORPHISM
+### inheritance
+```java
+    Dinner noodlesDinner = new Dinner();//Dinner class 
+    
+    //Noodle => parent class, BiangBiang => child class
+    Noodle biangBiang = new BiangBiang();
+    
+    //private void makeNoodles(Noodle noodle, String sauce)
+    noodlesDinner.makeNoodles(biangBiang, "soy sauce and chili oil");
+```
+
+### polymorphism
+```java
+//parent class method
+public void cook(){
+  System.out.println("cooking lunch");
+}
+
+//child class method 
+@Override
+public void cook(){
+ System.out.println("cooking dinner");
+}
+```
+
+
+***
 
 
 ## object method
