@@ -35,8 +35,8 @@ public class Linkedlist {
 
     }
 
-    public ListNode delete(ListNode deleteNode){
-
+    public ListNode delete(){
+        ListNode deleteNode=new ListNode();
         if(front==null){
             front=rear=null;
             System.out.println("queue empty, no node to delete");

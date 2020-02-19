@@ -1,11 +1,11 @@
 public class ExampleTest {
     public static void main(String[] args){
         ListNode node1=new ListNode(1);
-        ListNode node2=new ListNode(2);
-        ListNode node3=new ListNode(3);
+        ListNode node2=new ListNode(5);
+        ListNode node3=new ListNode(6);
 
-        ListNode node4=new ListNode(4);
-        ListNode node5=new ListNode(5);
+        ListNode node4=new ListNode(2);
+        ListNode node5=new ListNode(3);
         ListNode node6=new ListNode(6);
 
         ListNode node7=new ListNode(7);
@@ -26,7 +26,7 @@ public class ExampleTest {
         System.out.println("list number : "+list2.getListNum());
         list2.printLinkedlist();
 
-        ListNode delNode1=list2.delete(new ListNode());
+        ListNode delNode1=list2.delete();
 //        ListNode delNode2=list2.delete(new ListNode());
 //        ListNode delNode3=list2.delete(new ListNode());
 //        ListNode delNode4=list2.delete(new ListNode());
@@ -47,8 +47,20 @@ public class ExampleTest {
         Linkedlist mergeList=new Linkedlist();
         mergeList.create();
         while(l1.getListNum()!=0||l2.getListNum()!=0){
-            mergeList.add(l1.delete(new ListNode()));
-            mergeList.add(l2.delete(new ListNode()));
+
+            if(l1.front==null){
+                mergeList.add(l2.delete());
+            }else if(l2.front==null){
+                mergeList.add(l1.delete());
+            }else{
+                if(l1.front.val<=l2.front.val){
+                    mergeList.add(l1.delete());
+                }else{
+                    mergeList.add(l2.delete());
+                }
+            }
+//            mergeList.add(l1.delete());
+//            mergeList.add(l2.delete());
         }
         mergeList.printLinkedlist();
 
