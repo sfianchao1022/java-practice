@@ -1,7 +1,7 @@
 public class ExampleTest {
 
     public static void main(String[] args){
-        Double output=myPow(2.00000,-2);
+        Double output=myPow(2.00000,-5);
         System.out.println(output);
     }
 
@@ -11,7 +11,6 @@ public class ExampleTest {
             if (n==0){
                 return 1;
             }else{
-//            n=n-1;
                 return (1/x)*myPow(x,++n);
             }
 
