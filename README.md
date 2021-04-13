@@ -5,21 +5,37 @@
 - [Eclipse 下載安裝與使用教學 for Java \| MIS 腳印](https://footmark.info/software/ide/eclipse-download-and-use-for-java/)
 - [Eclipse IDE 下載、設定與使用教學-Java 篇 \| KJie Notes](https://www.kjnotes.com/devtools/80)
 - [Eclipse更換目前專案的JDK/JRE @ 松鼠的樹洞2.0](http://dontpkme.blogspot.com/2013/10/eclipsejre.html)
+- [Windows 10 之 JDK、MAVEN 和 Gradle 下載安裝與環境建置 \| 第一次學app就上手 - 點部落](https://dotblogs.com.tw/starhao/2016/10/18/004646)
 
 ## compile java
+
 For example, with a file called Plankton.java, we could compile it with the terminal command:
 ```
 javac Plankton.java
 ```
+
+if .java files are inside the package directory **package hello;**
+javac should compile at the top package:
+```
+javac hello/Plankton.java
+```
+
 A successful compilation produces a .class file: **Plankton.class**, that we execute with the terminal command:
 ```
 java Plankton
+```
+
+with package structures:
+```
+java hello/Plankton
 ```
 
 ***
 
 ### main method String[] args get input from terminal
 ```java
+package hello;
+
 public class HelloYou {
   public static void main(String[] args) {
     System.out.println("Hello " + args[0]);  
@@ -142,7 +158,7 @@ names.remove(1);
 //Traverses all elements of a collection:
 double[] values = ...;
 double sum = 0;
-for (double element : values)
+for (double element : values) // intellij hotkey : iter
 {
   sum = sum + element;
 }
@@ -176,7 +192,7 @@ for (int i = 0; i < accounts.size(); i++)
 - Random
 ```java
         Random random=new Random();
-        int num=random.nextInt(6)+1;//6個數字(0~5)+1
+        int num=random.nextInt(6)+1; //6個數字(0~5)+1
 
         while(num!=5){
             System.out.println(num);
