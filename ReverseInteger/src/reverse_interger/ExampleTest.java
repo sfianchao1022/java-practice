@@ -72,7 +72,24 @@ public class ExampleTest {
 		System.out.println(9*pow(10,9));//overflow
 		System.out.println(pow(10,9));
 		System.out.println(pow(2,31)-1);
-		
 	}
 
+	// another solution
+	public int reverse(int x) {
+
+		List<Integer> list = new ArrayList<>();
+
+		while (x != 0) {
+			list.add(x % 10);
+			x = x / 10;
+		}
+
+		int ans = 0;
+		for (int i = 0; i < list.size(); i++) {
+			ans = ans + list.get(i) * (int) Math.pow(10, i);
+		}
+		return ans;
+
+	}
+	
 }
